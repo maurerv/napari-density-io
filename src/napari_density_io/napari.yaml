@@ -1,0 +1,48 @@
+name: napari-density-io
+display_name: Napari Density IO
+contributions:
+  commands:
+    - id: napari-density-io.get_reader
+      python_name: napari_density_io._reader:napari_get_reader
+      title: Open data with Napari Density IO
+    - id: napari-density-io.write_multiple
+      python_name: napari_density_io._writer:write_multiple
+      title: Save multi-layer data with Napari Density IO
+    - id: napari-density-io.write_single_image
+      python_name: napari_density_io._writer:write_single_image
+      title: Save image data with Napari Density IO
+    - id: napari-density-io.make_sample_data
+      python_name: napari_density_io._sample_data:make_sample_data
+      title: Load sample data from Napari Density IO
+    - id: napari-density-io.make_qwidget
+      python_name: napari_density_io._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: napari-density-io.make_magic_widget
+      python_name: napari_density_io._widget:example_magic_widget
+      title: Make example magic widget
+    - id: napari-density-io.make_func_widget
+      python_name: napari_density_io._widget:example_function_widget
+      title: Make example function widget
+  readers:
+    - command: napari-density-io.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: napari-density-io.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-density-io.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  sample_data:
+    - command: napari-density-io.make_sample_data
+      display_name: Napari Density IO
+      key: unique_id.1
+  widgets:
+    - command: napari-density-io.make_qwidget
+      display_name: Example QWidget
+    - command: napari-density-io.make_magic_widget
+      display_name: Example Magic Widget
+    - command: napari-density-io.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget
