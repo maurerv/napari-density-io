@@ -26,11 +26,34 @@ contributions:
   readers:
     - command: napari-density-io.get_reader
       accepts_directories: false
-      filename_patterns: ['*.npy']
+      filename_patterns: [
+        '*.mrc',
+        '*.mrcs',
+        '*.map',
+        '*.st',
+        '*.rec',
+        '*.preali',
+        '*.ali',
+      ]
   writers:
     - command: napari-density-io.write_multiple
       layer_types: ['image*','labels*']
-      filename_extensions: []
+      filename_extensions: [
+        '*.mrc',
+        '*.mrcs',
+        '*.map',
+        '*.st',
+        '*.rec',
+        '*.preali',
+        '*.ali',
+        '*.mrc.gz',
+        '*.mrcs.gz',
+        '*.map.gz',
+        '*.st.gz',
+        '*.rec.gz',
+        '*.preali.gz',
+        '*.ali.gz',
+      ]
     - command: napari-density-io.write_single_image
       layer_types: ['image']
       filename_extensions: ['.npy']
