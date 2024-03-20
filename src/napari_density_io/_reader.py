@@ -41,6 +41,11 @@ def napari_get_reader(path):
         '.rec',
         '.preali',
         '.ali',
+        '.mrc.gz',
+        '.mrcs.gz',
+        '.map.gz',
+        '.st.gz',
+        '.rec.gz',
     )
     if not path.endswith(extensions):
         return None

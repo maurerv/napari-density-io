@@ -34,6 +34,11 @@ contributions:
         '*.rec',
         '*.preali',
         '*.ali',
+        '*.mrc.gz',
+        '*.mrcs.gz',
+        '*.map.gz',
+        '*.st.gz',
+        '*.rec.gz',
       ]
   writers:
     - command: napari-density-io.write_multiple
@@ -56,7 +61,7 @@ contributions:
       ]
     - command: napari-density-io.write_single_image
       layer_types: ['image']
-      filename_extensions: ['.npy']
+      filename_extensions: ['.mrc']
   sample_data:
     - command: napari-density-io.make_sample_data
       display_name: Napari Density IO
