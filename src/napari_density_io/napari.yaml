@@ -28,10 +28,12 @@ contributions:
       accepts_directories: false
       filename_patterns: [
         '*.mrc',
+        '*.em',
         '*.mrcs',
         '*.map',
         '*.st',
         '*.rec',
+        '*.h5',
         '*.preali',
         '*.ali',
         '*.mrc.gz',
@@ -46,11 +48,13 @@ contributions:
       filename_extensions: [
         '*.mrc',
         '*.mrcs',
+        '*.em',
         '*.map',
         '*.st',
         '*.rec',
         '*.preali',
         '*.ali',
+        '*.h5',
         '*.mrc.gz',
         '*.mrcs.gz',
         '*.map.gz',

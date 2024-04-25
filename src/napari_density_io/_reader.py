@@ -39,6 +39,8 @@ def napari_get_reader(path):
         '.map',
         '.st',
         '.rec',
+        '.em',
+        '.h5',
         '.preali',
         '.ali',
         '.mrc.gz',
